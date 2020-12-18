@@ -6,16 +6,24 @@ namespace Pribysh_Task1
     {
         static void Main(string[] args)
         {
-            string number = Console.ReadLine();
-            if (Convert.ToInt32(number) > 7)
+            try
             {
-                Console.WriteLine("Привет");
-            }
+                string number = Console.ReadLine();
+                if (Convert.ToInt32(number) > 7)
+                {
+                    Console.WriteLine("Привет");
+                }
 
-            else
-            {
-                Console.WriteLine("Число меньше или равно 7");
+                else
+                {
+                    Console.WriteLine("Число меньше или равно 7");
+                }
             }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+           
         }
     }
 }
