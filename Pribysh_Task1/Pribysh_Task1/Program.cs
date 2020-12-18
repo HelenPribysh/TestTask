@@ -8,6 +8,7 @@ namespace Pribysh_Task1
         {
             try
             {
+                Console.WriteLine("Введите число:");
                 string number = Console.ReadLine();
                 if (Convert.ToInt32(number) > 7)
                 {
